@@ -5,7 +5,6 @@ import java.util.HashMap;
 
 import org.w3c.dom.Document;
 
-import com.google.android.gms.maps.OnMapReadyCallback;
 import com.libraries.asynctask.MGAsyncTask;
 import com.libraries.asynctask.MGAsyncTask.OnMGAsyncTaskListener;
 import com.config.Config;
@@ -72,7 +71,7 @@ import android.widget.ToggleButton;
 
 public class MapFragment extends Fragment implements
 		OnInfoWindowClickListener, OnMapClickListener,
-		OnClickListener, OnDrawingViewListener, GoogleMap.OnMapLoadedCallback, OnMapReadyCallback {
+		OnClickListener, OnDrawingViewListener, GoogleMap.OnMapLoadedCallback {
 
 	private View viewInflate;
 	private GoogleMap googleMap;
@@ -183,7 +182,7 @@ public class MapFragment extends Fragment implements
 			supportMapFragment = ((SupportMapFragment) fManager.findFragmentById(R.id.googleMap));
 		}
 
-		supportMapFragment.getMapAsync(this);
+		//googleMap = supportMapFragment.getMap();
 		googleMap.setOnMapLoadedCallback(this);
 
 		markers = new HashMap<String, Store>();
@@ -195,14 +194,14 @@ public class MapFragment extends Fragment implements
 		FragmentManager fManager = getChildFragmentManager();
 		SupportMapFragment supportMapFragment =
 				((SupportMapFragment) fManager.findFragmentById(R.id.googleMap));
+
 		if (supportMapFragment == null) {
 			fManager = getActivity().getSupportFragmentManager();
 			supportMapFragment = ((SupportMapFragment) fManager.findFragmentById(R.id.googleMap));
 		}
 
-		supportMapFragment.getMapAsync(this);
+	//	googleMap = supportMapFragment.getMap();
 		googleMap.getUiSettings().setMyLocationButtonEnabled(true);
-
 
 		//googleMap.setMyLocationEnabled(true);
 		googleMap.setOnMapClickListener(this);
@@ -677,10 +676,5 @@ public class MapFragment extends Fragment implements
 		}
 
 		return mark;
-	}
-
-	@Override
-	public void onMapReady(GoogleMap googleMap) {
-
 	}
 }

@@ -357,7 +357,7 @@ public class DetailActivity extends SwipeRefreshActivity implements OnClickListe
 			public void run() {
 				// TODO Auto-generated method stub
                // googleMap = mapFragment.getMap();
-                googleMap.setOnMapLoadedCallback(DetailActivity.this);
+//                googleMap.setOnMapLoadedCallback(DetailActivity.this);
 			}
 		}, 300);
 	}
