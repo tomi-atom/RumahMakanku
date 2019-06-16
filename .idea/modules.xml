@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/StoreFinder.iml" filepath="$PROJECT_DIR$/StoreFinder.iml" />
       <module fileurl="file://$PROJECT_DIR$/facebookSDK/facebookSDK.iml" filepath="$PROJECT_DIR$/facebookSDK/facebookSDK.iml" />
-      <module fileurl="file://$PROJECT_DIR$/storeFinder/storeFinder.iml" filepath="$PROJECT_DIR$/storeFinder/storeFinder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rumahmakanku/rumahmakanku.iml" filepath="$PROJECT_DIR$/rumahmakanku/rumahmakanku.iml" />
     </modules>
   </component>
 </project>
