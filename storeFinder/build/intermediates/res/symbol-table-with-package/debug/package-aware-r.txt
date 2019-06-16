@@ -877,7 +877,6 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
-drawable bg_header_aboutus
 drawable bg_slider_fill
 drawable bg_slider_handle
 drawable bg_slider_handle_selected
