@@ -15,7 +15,7 @@
  WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH
  THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-package ru.truba.touchgallery.TouchView;
+package ru.truba.rm.TouchView;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -30,8 +30,8 @@ import java.net.URL;
 import java.net.URLConnection;
 
 
-import ru.truba.touchgallery.GalleryWidget.BaseUrlPagerAdapter.OnItemChangeListener;
-import ru.truba.touchgallery.TouchView.InputStreamWrapper.InputStreamProgressListener;
+import ru.truba.rm.GalleryWidget.BaseUrlPagerAdapter.OnItemChangeListener;
+import ru.truba.rm.TouchView.InputStreamWrapper.InputStreamProgressListener;
 
 public class UrlTouchImageView extends RelativeLayout 
 {

@@ -1,9 +1,9 @@
 package com.projects.activities;
 
 import java.util.ArrayList;
-import ru.truba.touchgallery.GalleryWidget.BaseUrlPagerAdapter;
-import ru.truba.touchgallery.GalleryWidget.GalleryViewPager;
-import ru.truba.touchgallery.GalleryWidget.BaseUrlPagerAdapter.OnItemChangeListener;
+import ru.truba.rm.GalleryWidget.BaseUrlPagerAdapter;
+import ru.truba.rm.GalleryWidget.GalleryViewPager;
+import ru.truba.rm.GalleryWidget.BaseUrlPagerAdapter.OnItemChangeListener;
 import com.config.UIConfig;
 import com.libraries.cache.util.ImageFetcherWrapper;
 import com.models.Photo;

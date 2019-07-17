@@ -1,4 +1,4 @@
-package ru.truba.touchgallery.TouchView;
+package ru.truba.rm.TouchView;
 
 import java.io.BufferedInputStream;
 import java.io.IOException;

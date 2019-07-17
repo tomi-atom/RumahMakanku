@@ -15,7 +15,7 @@
  WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH
  THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-package ru.truba.touchgallery.GalleryWidget;
+package ru.truba.rm.GalleryWidget;
 
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;
@@ -23,7 +23,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
-import ru.truba.touchgallery.TouchView.UrlTouchImageView;
+import ru.truba.rm.TouchView.UrlTouchImageView;
 
 /**
  Class wraps URLs to adapter, then it instantiates <b>UrlTouchImageView</b> objects to paging up through them.

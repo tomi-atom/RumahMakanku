@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
     
-    <ru.truba.touchgallery.GalleryWidget.GalleryViewPager
+    <ru.truba.rm.GalleryWidget.GalleryViewPager
             android:id="@+id/imageViewer"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"

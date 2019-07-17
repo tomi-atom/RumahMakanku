@@ -15,7 +15,7 @@
  WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH
  THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-package ru.truba.touchgallery.TouchView;
+package ru.truba.rm.TouchView;
 
 import java.lang.ref.WeakReference;
 import java.util.Timer;

@@ -5,7 +5,7 @@
     android:orientation="vertical" >
     
 
-    <ru.truba.touchgallery.TouchView.TouchImageView
+    <ru.truba.rm.TouchView.TouchImageView
         android:id="@+id/imgViewer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

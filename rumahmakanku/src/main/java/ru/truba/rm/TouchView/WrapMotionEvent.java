@@ -15,29 +15,66 @@
  WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH
  THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-package ru.truba.touchgallery.TouchView;
+package ru.truba.rm.TouchView;
 
 import android.view.MotionEvent;
 
-public class EclairMotionEvent extends WrapMotionEvent {
+public class WrapMotionEvent {
+    protected MotionEvent event;
 
-    protected EclairMotionEvent(MotionEvent event) {
-        super(event);
+
+
+
+    protected WrapMotionEvent(MotionEvent event) {
+        this.event = event;
+    }
+
+    static public WrapMotionEvent wrap(MotionEvent event) {
+        try {
+            return new EclairMotionEvent(event);
+        } catch (VerifyError e) {
+            return new WrapMotionEvent(event);
+        }
+    }
+
+
+
+    public int getAction() {
+        return event.getAction();
+    }
+
+    public float getX() {
+        return event.getX();
     }
 
     public float getX(int pointerIndex) {
-        return event.getX(pointerIndex);
+        verifyPointerIndex(pointerIndex);
+        return getX();
+    }
+
+    public float getY() {
+        return event.getY();
     }
 
     public float getY(int pointerIndex) {
-        return event.getY(pointerIndex);
+        verifyPointerIndex(pointerIndex);
+        return getY();
     }
 
     public int getPointerCount() {
-        return event.getPointerCount();
+        return 1;
     }
 
     public int getPointerId(int pointerIndex) {
-        return event.getPointerId(pointerIndex);
+        verifyPointerIndex(pointerIndex);
+        return 0;
     }
+
+    private void verifyPointerIndex(int pointerIndex) {
+        if (pointerIndex > 0) {
+            throw new IllegalArgumentException(
+                    "Invalid pointer index for Donut/Cupcake");
+        }
+    }
+
 }
