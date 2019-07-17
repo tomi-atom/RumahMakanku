@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\atom\\StudioProjects\\StoreFinder\\rumahmakanku\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mdpi-v4\\values-mdpi-v4.xml",
+            "outputFile": "C:\\Users\\atom\\StudioProjects\\RumahMakanku\\rumahmakanku\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mdpi-v4\\values-mdpi-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\atom\\StudioProjects\\StoreFinder\\facebookSDK\\build\\intermediates\\packaged_res\\debug\\values-mdpi-v4\\values-mdpi-v4.xml",
+                    "source": "C:\\Users\\atom\\StudioProjects\\RumahMakanku\\facebookSDK\\build\\intermediates\\packaged_res\\debug\\values-mdpi-v4\\values-mdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

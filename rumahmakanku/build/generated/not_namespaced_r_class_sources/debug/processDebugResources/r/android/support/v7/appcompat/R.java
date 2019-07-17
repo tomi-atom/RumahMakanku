@@ -739,26 +739,26 @@ public final class R {
         public static final int abc_search_dropdown_item_icons_2line = 0x7f0b0018;
         public static final int abc_search_view = 0x7f0b0019;
         public static final int abc_select_dialog_material = 0x7f0b001a;
-        public static final int notification_action = 0x7f0b0057;
-        public static final int notification_action_tombstone = 0x7f0b0058;
-        public static final int notification_media_action = 0x7f0b0059;
-        public static final int notification_media_cancel_action = 0x7f0b005a;
-        public static final int notification_template_big_media = 0x7f0b005b;
-        public static final int notification_template_big_media_custom = 0x7f0b005c;
-        public static final int notification_template_big_media_narrow = 0x7f0b005d;
-        public static final int notification_template_big_media_narrow_custom = 0x7f0b005e;
-        public static final int notification_template_custom_big = 0x7f0b005f;
-        public static final int notification_template_icon_group = 0x7f0b0060;
-        public static final int notification_template_lines_media = 0x7f0b0061;
-        public static final int notification_template_media = 0x7f0b0062;
-        public static final int notification_template_media_custom = 0x7f0b0063;
-        public static final int notification_template_part_chronometer = 0x7f0b0064;
-        public static final int notification_template_part_time = 0x7f0b0065;
-        public static final int select_dialog_item_material = 0x7f0b006d;
-        public static final int select_dialog_multichoice_material = 0x7f0b006e;
-        public static final int select_dialog_singlechoice_material = 0x7f0b006f;
-        public static final int support_simple_spinner_dropdown_item = 0x7f0b0073;
-        public static final int tooltip = 0x7f0b0074;
+        public static final int notification_action = 0x7f0b0058;
+        public static final int notification_action_tombstone = 0x7f0b0059;
+        public static final int notification_media_action = 0x7f0b005a;
+        public static final int notification_media_cancel_action = 0x7f0b005b;
+        public static final int notification_template_big_media = 0x7f0b005c;
+        public static final int notification_template_big_media_custom = 0x7f0b005d;
+        public static final int notification_template_big_media_narrow = 0x7f0b005e;
+        public static final int notification_template_big_media_narrow_custom = 0x7f0b005f;
+        public static final int notification_template_custom_big = 0x7f0b0060;
+        public static final int notification_template_icon_group = 0x7f0b0061;
+        public static final int notification_template_lines_media = 0x7f0b0062;
+        public static final int notification_template_media = 0x7f0b0063;
+        public static final int notification_template_media_custom = 0x7f0b0064;
+        public static final int notification_template_part_chronometer = 0x7f0b0065;
+        public static final int notification_template_part_time = 0x7f0b0066;
+        public static final int select_dialog_item_material = 0x7f0b006e;
+        public static final int select_dialog_multichoice_material = 0x7f0b006f;
+        public static final int select_dialog_singlechoice_material = 0x7f0b0070;
+        public static final int support_simple_spinner_dropdown_item = 0x7f0b0074;
+        public static final int tooltip = 0x7f0b0075;
     }
     public static final class string {
         private string() {}
@@ -794,8 +794,8 @@ public final class R {
         public static final int abc_shareactionprovider_share_with = 0x7f0d001d;
         public static final int abc_shareactionprovider_share_with_application = 0x7f0d001e;
         public static final int abc_toolbar_collapse_description = 0x7f0d001f;
-        public static final int search_menu_title = 0x7f0d00f4;
-        public static final int status_bar_notification_info_overflow = 0x7f0d00fa;
+        public static final int search_menu_title = 0x7f0d00f5;
+        public static final int status_bar_notification_info_overflow = 0x7f0d00fb;
     }
     public static final class style {
         private style() {}

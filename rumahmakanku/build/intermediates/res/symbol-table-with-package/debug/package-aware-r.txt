@@ -1875,6 +1875,7 @@ layout fragment_home
 layout fragment_imageviewer
 layout fragment_login
 layout fragment_map2
+layout fragment_map_2
 layout fragment_menu
 layout fragment_news
 layout fragment_news_detail
@@ -2108,6 +2109,7 @@ string handset_not_supported
 string header_categories
 string header_extras
 string header_users
+string hello_blank_fragment
 string home
 string km
 string latitude_longitude

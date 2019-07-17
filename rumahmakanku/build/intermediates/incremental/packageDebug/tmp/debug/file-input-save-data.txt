@@ -1,19 +1,19 @@
 #Internal package file, do not edit.
-#Sun Jun 16 17:03:44 ICT 2019
-1.base=C\:\\Users\\atom\\StudioProjects\\StoreFinder\\rumahmakanku\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out
-2.path=classes_0.dex
+#Tue Jul 16 11:47:50 ICT 2019
+1.base=C\:\\Users\\atom\\StudioProjects\\RumahMakanku\\rumahmakanku\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out
+2.path=classes.dex
 0.baseType=DIRECTORY
 3.baseType=DIRECTORY
-2.base=C\:\\Users\\atom\\StudioProjects\\StoreFinder\\rumahmakanku\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\out
+2.base=C\:\\Users\\atom\\StudioProjects\\RumahMakanku\\rumahmakanku\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out
 3.set=DEX
 2.set=DEX
 1.baseType=DIRECTORY
-3.path=classes.dex
+3.path=classes_0.dex
 count=4
 1.set=DEX
-0.path=classes2.dex
-3.base=C\:\\Users\\atom\\StudioProjects\\StoreFinder\\rumahmakanku\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out
+0.path=classes.dex
+3.base=C\:\\Users\\atom\\StudioProjects\\RumahMakanku\\rumahmakanku\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\out
 0.set=DEX
-0.base=C\:\\Users\\atom\\StudioProjects\\StoreFinder\\rumahmakanku\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out
+0.base=C\:\\Users\\atom\\StudioProjects\\RumahMakanku\\rumahmakanku\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out
 2.baseType=DIRECTORY
-1.path=classes.dex
+1.path=classes2.dex

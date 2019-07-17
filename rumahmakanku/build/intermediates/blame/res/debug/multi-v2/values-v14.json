@@ -1,27 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\atom\\StudioProjects\\StoreFinder\\rumahmakanku\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v14\\values-v14.xml",
+            "outputFile": "C:\\Users\\atom\\StudioProjects\\RumahMakanku\\rumahmakanku\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v14\\values-v14.xml",
             "map": [
-                {
-                    "source": "C:\\Users\\atom\\StudioProjects\\StoreFinder\\rumahmakanku\\src\\main\\res\\values-v14\\styles.xml",
-                    "from": {
-                        "startLines": "7",
-                        "startColumns": "4",
-                        "startOffsets": "227",
-                        "endLines": "9",
-                        "endColumns": "12",
-                        "endOffsets": "375"
-                    },
-                    "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "4",
-                        "endColumns": "12",
-                        "endOffsets": "201"
-                    }
-                },
                 {
                     "source": "C:\\Users\\atom\\.gradle\\caches\\transforms-2\\files-2.1\\af8b74a2f39ffcb53eb07fd7b68ad6a8\\res\\values-v14\\values-v14.xml",
                     "from": {
@@ -39,6 +20,25 @@
                         "endLines": "9,10,11,17,23",
                         "endColumns": "12,70,82,12,12",
                         "endOffsets": "477,548,631,1041,1463"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\atom\\StudioProjects\\RumahMakanku\\rumahmakanku\\src\\main\\res\\values-v14\\styles.xml",
+                    "from": {
+                        "startLines": "7",
+                        "startColumns": "4",
+                        "startOffsets": "227",
+                        "endLines": "9",
+                        "endColumns": "12",
+                        "endOffsets": "375"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "201"
                     }
                 }
             ]

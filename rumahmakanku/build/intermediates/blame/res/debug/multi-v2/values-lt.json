@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\atom\\StudioProjects\\StoreFinder\\rumahmakanku\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lt\\values-lt.xml",
+            "outputFile": "C:\\Users\\atom\\StudioProjects\\RumahMakanku\\rumahmakanku\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lt\\values-lt.xml",
             "map": [
                 {
                     "source": "C:\\Users\\atom\\.gradle\\caches\\transforms-2\\files-2.1\\9bfe17ee897c01ceaa88ff98653a9b96\\res\\values-lt\\values.xml",

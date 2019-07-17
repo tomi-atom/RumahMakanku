@@ -5,6 +5,8 @@ import java.util.HashMap;
 
 import org.w3c.dom.Document;
 
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.model.BitmapDescriptor;
 import com.libraries.asynctask.MGAsyncTask;
 import com.libraries.asynctask.MGAsyncTask.OnMGAsyncTaskListener;
 import com.config.Config;
@@ -43,15 +45,22 @@ import com.projects.main.R;
 import com.libraries.sliding.MGSliding;
 import com.libraries.utilities.MGUtilities;
 
+import android.Manifest;
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.location.Location;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.content.ContextCompat;
 import android.text.Html;
 import android.text.Spanned;
 import android.util.Log;
@@ -68,7 +77,7 @@ import android.widget.ToggleButton;
 
 public class MapFragment extends Fragment implements
 		OnInfoWindowClickListener, OnMapClickListener,
-		OnClickListener, OnDrawingViewListener, GoogleMap.OnMapLoadedCallback {
+		OnClickListener, OnDrawingViewListener, GoogleMap.OnMapLoadedCallback, OnMapReadyCallback {
 
 	private View viewInflate;
 	private GoogleMap googleMap;
@@ -171,19 +180,20 @@ public class MapFragment extends Fragment implements
 		main.showSwipeProgress();
 
 		FragmentManager fManager = getChildFragmentManager();
-		SupportMapFragment supportMapFragment =
-				((SupportMapFragment) fManager.findFragmentById(R.id.googleMap));
-
-		if (supportMapFragment == null) {
-			fManager = getActivity().getSupportFragmentManager();
-			supportMapFragment = ((SupportMapFragment) fManager.findFragmentById(R.id.googleMap));
-		}
-
-		//googleMap = supportMapFragment.getMap();
+		MapFragment mapFragment = (MapFragment) getFragmentManager().findFragmentById(R.id.googleMap);
+		//mapFragment.getMapAsync(this);
 		googleMap.setOnMapLoadedCallback(this);
 
 		markers = new HashMap<String, Store>();
 		markerList = new ArrayList<Marker>();
+	}
+	private BitmapDescriptor bitmapDescriptorFromVector(Context context, int vectorResId) {
+		Drawable vectorDrawable = ContextCompat.getDrawable(context, vectorResId);
+		vectorDrawable.setBounds(0, 0, vectorDrawable.getIntrinsicWidth(), vectorDrawable.getIntrinsicHeight());
+		Bitmap bitmap = Bitmap.createBitmap(vectorDrawable.getIntrinsicWidth(), vectorDrawable.getIntrinsicHeight(), Bitmap.Config.ARGB_8888);
+		Canvas canvas = new Canvas(bitmap);
+		vectorDrawable.draw(canvas);
+		return BitmapDescriptorFactory.fromBitmap(bitmap);
 	}
 
 	@Override
@@ -197,8 +207,9 @@ public class MapFragment extends Fragment implements
 			supportMapFragment = ((SupportMapFragment) fManager.findFragmentById(R.id.googleMap));
 		}
 
-	//	googleMap = supportMapFragment.getMap();
+		//googleMap = supportMapFragment.getMap();
 		googleMap.getUiSettings().setMyLocationButtonEnabled(true);
+
 
 		//googleMap.setMyLocationEnabled(true);
 		googleMap.setOnMapClickListener(this);
@@ -673,5 +684,10 @@ public class MapFragment extends Fragment implements
 		}
 
 		return mark;
+	}
+
+	@Override
+	public void onMapReady(GoogleMap googleMap) {
+
 	}
 }

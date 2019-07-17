@@ -25,7 +25,7 @@
 		          android:id="@+id/googleMap"
 		          android:layout_width="match_parent"
 		          android:layout_height="match_parent"
-		          class="com.google.android.gms.maps.SupportMapFragment" />
+					class="com.google.android.gms.maps.MapFragment" />
 		        
 		        <com.libraries.drawingview.DrawingView
 					android:id="@+id/drawingView"

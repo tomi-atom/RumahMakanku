@@ -11,6 +11,8 @@ import org.apache.http.message.BasicNameValuePair;
 
 import twitter4j.auth.AccessToken;
 
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.model.CameraPosition;
 import com.libraries.asynctask.MGAsyncTask;
 import com.libraries.asynctask.MGAsyncTask.OnMGAsyncTaskListener;
 import com.config.Config;
@@ -89,7 +91,8 @@ public class DetailActivity extends SwipeRefreshActivity implements OnClickListe
 	private ResponseStore responseStore;
 	private ResponseRating responseRating;
 	boolean canRate = true;
-	private SupportMapFragment mapFragment;
+	//private SupportMapFragment mapFragment;
+	SupportMapFragment mapFragment;
 	private GoogleMap googleMap;
 	private Queries q;
 	private SQLiteDatabase db;
@@ -354,7 +357,37 @@ public class DetailActivity extends SwipeRefreshActivity implements OnClickListe
 			@Override
 			public void run() {
 				// TODO Auto-generated method stub
-               // googleMap = mapFragment.getMap();
+                mapFragment.getMapAsync(new OnMapReadyCallback() {
+					@Override
+					public void onMapReady(GoogleMap mMap) {
+						mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+
+						mMap.clear(); //clear old markers
+
+						CameraPosition googlePlex = CameraPosition.builder()
+								.target(new LatLng(37.4219999,-122.0862462))
+								.zoom(10)
+								.bearing(0)
+								.tilt(45)
+								.build();
+
+						mMap.animateCamera(CameraUpdateFactory.newCameraPosition(googlePlex), 10000, null);
+
+						mMap.addMarker(new MarkerOptions()
+								.position(new LatLng(37.4219999, -122.0862462))
+								.title("Spider Man")
+								);
+
+						mMap.addMarker(new MarkerOptions()
+								.position(new LatLng(37.4629101,-122.2449094))
+								.title("Iron Man")
+								.snippet("His Talent : Plenty of money"));
+
+						mMap.addMarker(new MarkerOptions()
+								.position(new LatLng(37.3092293,-122.1136845))
+								.title("Captain America"));
+					}
+				});
 //                googleMap.setOnMapLoadedCallback(DetailActivity.this);
 			}
 		}, 300);
@@ -365,7 +398,7 @@ public class DetailActivity extends SwipeRefreshActivity implements OnClickListe
         if(!isUserCanRate)
             hideSwipeProgress();
 
-        //googleMap = mapFragment.getMap();
+        setMap();
         googleMap.getUiSettings().setAllGesturesEnabled(false);
         googleMap.getUiSettings().setMyLocationButtonEnabled(false);
         googleMap.getUiSettings().setScrollGesturesEnabled(false);
@@ -638,21 +671,21 @@ public class DetailActivity extends SwipeRefreshActivity implements OnClickListe
 			return;
 		}
 		
-//		String geo = String.format("geo:%f,%f?q=%f,%f", 
-//				store.getLat(), 
-//				store.getLon(), 
-//				store.getLat(), 
+//		String geo = String.format("geo:%f,%f?q=%f,%f",
+//				store.getLat(),
+//				store.getLon(),
+//				store.getLat(),
 //				store.getLon() );
 		
 //		String geo = String.format("http://maps.google.com/maps?f=d&daddr=%s,%s&dirflg=d",
-//				store.getLat(), 
+//				store.getLat(),
 //				store.getLon()) ;
 		
 		String geo = String.format("http://maps.google.com/maps?f=d&daddr=%s&dirflg=d",
 				store.getStore_address()) ;
 		
 		Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(geo));		
-//		Uri.parse("geo:55.74274,37.56577?q=55.74274,37.56577 (name)"));
+		//Uri.parse("geo:55.74274,37.56577?q=55.74274,37.56577 (name)"));
 		intent.setComponent(new ComponentName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity"));
 		this.startActivity(intent);
 	}	

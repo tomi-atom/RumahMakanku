@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    	
+
     <string name="app_id">894251437257928</string>
 
 
@@ -116,4 +116,7 @@
     <string name="tap_back_again_to_exit">Please tap back again to exit the app.</string>
     <string name="empty_distance">----</string>
     <string name="problems_encountered_login">Problems encountered during login.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

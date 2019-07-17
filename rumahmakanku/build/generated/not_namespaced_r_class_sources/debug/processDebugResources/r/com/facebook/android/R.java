@@ -267,21 +267,21 @@ public final class R {
         public static final int com_facebook_search_bar_layout = 0x7f0b0030;
         public static final int com_facebook_tooltip_bubble = 0x7f0b0031;
         public static final int com_facebook_usersettingsfragment = 0x7f0b0032;
-        public static final int notification_action = 0x7f0b0057;
-        public static final int notification_action_tombstone = 0x7f0b0058;
-        public static final int notification_media_action = 0x7f0b0059;
-        public static final int notification_media_cancel_action = 0x7f0b005a;
-        public static final int notification_template_big_media = 0x7f0b005b;
-        public static final int notification_template_big_media_custom = 0x7f0b005c;
-        public static final int notification_template_big_media_narrow = 0x7f0b005d;
-        public static final int notification_template_big_media_narrow_custom = 0x7f0b005e;
-        public static final int notification_template_custom_big = 0x7f0b005f;
-        public static final int notification_template_icon_group = 0x7f0b0060;
-        public static final int notification_template_lines_media = 0x7f0b0061;
-        public static final int notification_template_media = 0x7f0b0062;
-        public static final int notification_template_media_custom = 0x7f0b0063;
-        public static final int notification_template_part_chronometer = 0x7f0b0064;
-        public static final int notification_template_part_time = 0x7f0b0065;
+        public static final int notification_action = 0x7f0b0058;
+        public static final int notification_action_tombstone = 0x7f0b0059;
+        public static final int notification_media_action = 0x7f0b005a;
+        public static final int notification_media_cancel_action = 0x7f0b005b;
+        public static final int notification_template_big_media = 0x7f0b005c;
+        public static final int notification_template_big_media_custom = 0x7f0b005d;
+        public static final int notification_template_big_media_narrow = 0x7f0b005e;
+        public static final int notification_template_big_media_narrow_custom = 0x7f0b005f;
+        public static final int notification_template_custom_big = 0x7f0b0060;
+        public static final int notification_template_icon_group = 0x7f0b0061;
+        public static final int notification_template_lines_media = 0x7f0b0062;
+        public static final int notification_template_media = 0x7f0b0063;
+        public static final int notification_template_media_custom = 0x7f0b0064;
+        public static final int notification_template_part_chronometer = 0x7f0b0065;
+        public static final int notification_template_part_time = 0x7f0b0066;
     }
     public static final class string {
         private string() {}
@@ -312,7 +312,7 @@ public final class R {
         public static final int com_facebook_usersettingsfragment_log_in_button = 0x7f0d007e;
         public static final int com_facebook_usersettingsfragment_logged_in = 0x7f0d007f;
         public static final int com_facebook_usersettingsfragment_not_logged_in = 0x7f0d0080;
-        public static final int status_bar_notification_info_overflow = 0x7f0d00fa;
+        public static final int status_bar_notification_info_overflow = 0x7f0d00fb;
     }
     public static final class style {
         private style() {}

@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="Gradle: __local_aars__:C.\Users\atom\StudioProjects\StoreFinder\rumahmakanku\libs\jackson-databind-2.2.2.jar:unspecified@jar">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/rumahmakanku/libs/jackson-databind-2.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../StoreFinder/rumahmakanku/libs/jackson-databind-2.2.2.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

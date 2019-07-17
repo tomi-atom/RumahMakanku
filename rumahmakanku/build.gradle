@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.projects.main"
-        minSdkVersion 21
+        minSdkVersion 19
         targetSdkVersion 28
         multiDexEnabled true
 
@@ -45,4 +45,8 @@ dependencies {
     implementation files('libs/twitter4j-media-support-4.0.2.jar')
     implementation files('libs/twitter4j-stream-4.0.2.jar')
     implementation files('libs/universal-image-loader-1.9.2-SNAPSHOT-with-sources.jar')
+    implementation 'com.google.android.gms:play-services-places:16.0.0'
+    implementation 'com.google.android.gms:play-services-maps:16.0.0'
+    implementation "com.google.android.gms:play-services-location:16.0.0"
+    implementation 'com.android.support:multidex:1.0.3'
 }

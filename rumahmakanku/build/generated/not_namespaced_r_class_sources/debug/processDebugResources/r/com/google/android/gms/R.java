@@ -493,11 +493,11 @@ public final class R {
         public static final int cast_mini_controller = 0x7f0b0020;
         public static final int cast_tracks_chooser_dialog_layout = 0x7f0b0021;
         public static final int cast_tracks_chooser_dialog_row_layout = 0x7f0b0022;
-        public static final int place_autocomplete_fragment = 0x7f0b0067;
-        public static final int place_autocomplete_item_powered_by_google = 0x7f0b0068;
-        public static final int place_autocomplete_item_prediction = 0x7f0b0069;
-        public static final int place_autocomplete_progress = 0x7f0b006a;
-        public static final int wallet_test_layout = 0x7f0b0076;
+        public static final int place_autocomplete_fragment = 0x7f0b0068;
+        public static final int place_autocomplete_item_powered_by_google = 0x7f0b0069;
+        public static final int place_autocomplete_item_prediction = 0x7f0b006a;
+        public static final int place_autocomplete_progress = 0x7f0b006b;
+        public static final int wallet_test_layout = 0x7f0b0077;
     }
     public static final class string {
         private string() {}
@@ -563,19 +563,19 @@ public final class R {
         public static final int common_signin_button_text_long = 0x7f0d0093;
         public static final int fcm_fallback_notification_channel_label = 0x7f0d00a0;
         public static final int gcm_fallback_notification_channel_label = 0x7f0d00a5;
-        public static final int place_autocomplete_clear_button = 0x7f0d00d5;
-        public static final int place_autocomplete_search_hint = 0x7f0d00d6;
-        public static final int s1 = 0x7f0d00eb;
-        public static final int s2 = 0x7f0d00ec;
-        public static final int s3 = 0x7f0d00ed;
-        public static final int s4 = 0x7f0d00ee;
-        public static final int s5 = 0x7f0d00ef;
-        public static final int s6 = 0x7f0d00f0;
-        public static final int s7 = 0x7f0d00f1;
-        public static final int tagmanager_preview_dialog_button = 0x7f0d00fb;
-        public static final int tagmanager_preview_dialog_message = 0x7f0d00fc;
-        public static final int tagmanager_preview_dialog_title = 0x7f0d00fd;
-        public static final int wallet_buy_button_place_holder = 0x7f0d0107;
+        public static final int place_autocomplete_clear_button = 0x7f0d00d6;
+        public static final int place_autocomplete_search_hint = 0x7f0d00d7;
+        public static final int s1 = 0x7f0d00ec;
+        public static final int s2 = 0x7f0d00ed;
+        public static final int s3 = 0x7f0d00ee;
+        public static final int s4 = 0x7f0d00ef;
+        public static final int s5 = 0x7f0d00f0;
+        public static final int s6 = 0x7f0d00f1;
+        public static final int s7 = 0x7f0d00f2;
+        public static final int tagmanager_preview_dialog_button = 0x7f0d00fc;
+        public static final int tagmanager_preview_dialog_message = 0x7f0d00fd;
+        public static final int tagmanager_preview_dialog_title = 0x7f0d00fe;
+        public static final int wallet_buy_button_place_holder = 0x7f0d0108;
     }
     public static final class style {
         private style() {}
