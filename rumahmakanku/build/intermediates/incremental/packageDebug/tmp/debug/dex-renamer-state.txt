@@ -1,13 +1,10 @@
-#Wed Jul 17 15:41:49 ICT 2019
-path.3=classes_0.dex
-path.2=classes2.dex
-path.1=classes.dex
+#Thu Jul 18 09:13:24 ICT 2019
+path.2=classes3.dex
+path.1=classes2.dex
 path.0=classes.dex
-renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-base.3=C\:\\Users\\atom\\StudioProjects\\RumahMakanku\\rumahmakanku\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\out
-base.2=C\:\\Users\\atom\\StudioProjects\\RumahMakanku\\rumahmakanku\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out
-base.1=C\:\\Users\\atom\\StudioProjects\\RumahMakanku\\rumahmakanku\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out
-base.0=C\:\\Users\\atom\\StudioProjects\\RumahMakanku\\rumahmakanku\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out
+base.2=C\:\\Users\\atom\\StudioProjects\\RumahMakanku\\rumahmakanku\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
+base.1=C\:\\Users\\atom\\StudioProjects\\RumahMakanku\\rumahmakanku\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
+base.0=C\:\\Users\\atom\\StudioProjects\\RumahMakanku\\rumahmakanku\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out

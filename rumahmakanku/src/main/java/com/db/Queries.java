@@ -363,7 +363,7 @@ public class Queries {
 		String sql = String.format("SELECT * FROM photos WHERE store_id = %d", storeId);
 		Cursor mCursor = db.rawQuery(sql, null);  
 		mCursor.moveToFirst();
-		
+
 		if (!mCursor.isAfterLast()) {
 			do {
 

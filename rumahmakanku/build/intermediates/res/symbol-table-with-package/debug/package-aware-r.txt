@@ -9,16 +9,10 @@ anim abc_slide_in_bottom
 anim abc_slide_in_top
 anim abc_slide_out_bottom
 anim abc_slide_out_top
-anim rotate
-anim slide_down
 anim slide_down2
-anim slide_in_left
-anim slide_up
 anim slide_up2
 anim tooltip_enter
 anim tooltip_exit
-anim trans_slide_in_left
-anim trans_slide_out_right
 array cast_expanded_controller_default_control_buttons
 array cast_mini_controller_default_control_buttons
 attr actionBarDivider
@@ -472,9 +466,7 @@ color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
 color background_material_light
-color bg_color
 color bg_gray_color
-color bg_white_color
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -521,7 +513,6 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
-color list_text_color
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -538,8 +529,6 @@ color no_result_text_color
 color notification_action_color_filter
 color notification_icon_bg_color
 color notification_material_background_media_default_color
-color number_bar
-color overlay_color
 color place_autocomplete_prediction_primary_text
 color place_autocomplete_prediction_primary_text_highlight
 color place_autocomplete_prediction_secondary_text
@@ -574,7 +563,6 @@ color theme_orange_color
 color theme_orange_color_alpha_66
 color tooltip_background_dark
 color tooltip_background_light
-color unselected_text_color
 color view_bg_color
 color wallet_bright_foreground_disabled_holo_light
 color wallet_bright_foreground_holo_dark
@@ -589,7 +577,6 @@ color wallet_holo_blue_light
 color wallet_link_text_light
 color wallet_primary_text_holo_light
 color wallet_secondary_text_holo_dark
-color word_bar
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -664,8 +651,6 @@ dimen abc_text_size_subhead_material
 dimen abc_text_size_subtitle_material_toolbar
 dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
-dimen activity_horizontal_margin
-dimen activity_vertical_margin
 dimen border_store_list
 dimen cast_expanded_controller_ad_background_layout_height
 dimen cast_expanded_controller_ad_background_layout_width
@@ -707,7 +692,6 @@ dimen com_facebook_picker_place_image_size
 dimen com_facebook_profilepictureview_preset_size_large
 dimen com_facebook_profilepictureview_preset_size_normal
 dimen com_facebook_profilepictureview_preset_size_small
-dimen com_facebook_tooltip_horizontal_padding
 dimen com_facebook_usersettingsfragment_profile_picture_height
 dimen com_facebook_usersettingsfragment_profile_picture_width
 dimen compat_button_inset_horizontal_material
@@ -735,7 +719,6 @@ dimen hint_alpha_material_dark
 dimen hint_alpha_material_light
 dimen hint_pressed_alpha_material_dark
 dimen hint_pressed_alpha_material_light
-dimen list_padding
 dimen mr_controller_volume_group_list_item_height
 dimen mr_controller_volume_group_list_item_icon_size
 dimen mr_controller_volume_group_list_max_height
@@ -767,8 +750,6 @@ dimen place_autocomplete_prediction_secondary_text
 dimen place_autocomplete_progress_horizontal_margin
 dimen place_autocomplete_progress_size
 dimen place_autocomplete_separator_start
-dimen shadow_width
-dimen slidingmenu_offset
 dimen subtitle_corner_radius
 dimen subtitle_outline_width
 dimen subtitle_shadow_offset
@@ -879,7 +860,6 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable bg_slider_fill
 drawable bg_slider_handle
-drawable bg_slider_handle_selected
 drawable bg_slider_track
 drawable bg_splash
 drawable blur_weather
@@ -912,7 +892,6 @@ drawable button_sms
 drawable button_sms_selector
 drawable button_toggle_nearby_selector
 drawable button_toggle_starred_selector
-drawable button_twitter
 drawable button_twitter_large
 drawable button_twitter_large_selector
 drawable button_web
@@ -971,9 +950,6 @@ drawable cast_ic_stop_circle_filled_white
 drawable cast_mini_controller_gradient_light
 drawable cast_mini_controller_progress_drawable
 drawable cast_skip_ad_label_border
-drawable circle
-drawable circle2
-drawable circular
 drawable com_facebook_button_blue
 drawable com_facebook_button_blue_focused
 drawable com_facebook_button_blue_normal
@@ -991,7 +967,6 @@ drawable com_facebook_list_section_header_background
 drawable com_facebook_loginbutton_silver
 drawable com_facebook_logo
 drawable com_facebook_picker_default_separator_color
-drawable com_facebook_picker_item_background
 drawable com_facebook_picker_list_focused
 drawable com_facebook_picker_list_longpressed
 drawable com_facebook_picker_list_pressed
@@ -1034,17 +1009,14 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
-drawable detail_image_placeholder
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable header_logo
 drawable ic_about
 drawable ic_audiotrack_dark
 drawable ic_audiotrack_light
-drawable ic_back
 drawable ic_categories
 drawable ic_check
-drawable ic_close
 drawable ic_dialog_close_dark
 drawable ic_dialog_close_light
 drawable ic_featured
@@ -1249,14 +1221,10 @@ drawable ic_web_back
 drawable ic_web_forward
 drawable ic_web_refresh
 drawable image_counter
-drawable image_viewer_placeholder
 drawable line_divider_black
 drawable line_divider_orange
-drawable line_divider_orange_selector
 drawable list_arrow
 drawable list_divider
-drawable list_news_placeholder_210
-drawable list_store_placeholder
 drawable map_info_placeholder
 drawable map_pin_orange
 drawable mr_button_connected_dark
@@ -1343,20 +1311,12 @@ drawable quantum_ic_volume_up_white_36
 drawable review_thumb_placeholder
 drawable seekbar_progess_bg
 drawable seekbar_progress
-drawable shadow
-drawable side_bar_header
 drawable side_bar_list_bg
-drawable side_bar_list_bg_pattern
 drawable side_bar_list_bg_selected
-drawable side_bar_list_bg_selected_pattern
 drawable side_bar_list_header_bg
 drawable side_bar_list_selector
-drawable side_bar_pattern
 drawable slider_placeholder
 drawable star_empty
-drawable star_fave_map_normal
-drawable star_fave_normal
-drawable star_fave_selected
 drawable star_fill
 drawable star_half
 drawable star_new_rating_empty
@@ -1373,12 +1333,9 @@ drawable star_rating_bar_user_full_half
 drawable tag_featured
 drawable tag_starred
 drawable textbox_bg_review
-drawable textbox_email
-drawable textbox_fullname
 drawable textbox_password
 drawable textbox_profile
 drawable textbox_search_normal
-drawable textbox_search_selected
 drawable textbox_username
 drawable toggle_thumb_off
 drawable toggle_thumb_on
@@ -1511,8 +1468,6 @@ id contact
 id container_all
 id container_current
 id contentPanel
-id content_frame
-id content_frame_root
 id controllers
 id crash_reporting_present
 id custom
@@ -1582,7 +1537,6 @@ id imgViewGallery
 id imgViewIcon
 id imgViewLocation
 id imgViewMap
-id imgViewMenu
 id imgViewNearby
 id imgViewPhoto
 id imgViewRefresh
@@ -1629,7 +1583,6 @@ id media_actions
 id menuNewReview
 id menuPostReview
 id menuReview
-id menu_frame
 id message
 id middle
 id monochrome
@@ -1806,11 +1759,9 @@ integer google_play_services_version
 integer mr_controller_volume_group_list_animation_duration_ms
 integer mr_controller_volume_group_list_fade_in_duration_ms
 integer mr_controller_volume_group_list_fade_out_duration_ms
-integer num_cols
 integer num_new_lines_1
 integer num_new_lines_2
 integer num_new_lines_5
-integer num_news_line_3
 integer status_bar_notification_info_maxnum
 interpolator mr_fast_out_slow_in
 interpolator mr_linear_out_slow_in
@@ -1865,7 +1816,6 @@ layout com_facebook_placepickerfragment_list_row
 layout com_facebook_search_bar_layout
 layout com_facebook_tooltip_bubble
 layout com_facebook_usersettingsfragment
-layout content_frame
 layout empty_list
 layout fragment_about_us
 layout fragment_animation
@@ -1876,7 +1826,6 @@ layout fragment_imageviewer
 layout fragment_login
 layout fragment_map2
 layout fragment_map_2
-layout fragment_menu
 layout fragment_news
 layout fragment_news_detail
 layout fragment_profile
@@ -1890,10 +1839,7 @@ layout fragment_store
 layout fragment_terms_condition
 layout fragment_weather
 layout imageviewer_entry
-layout item_entry
-layout load_more_entry
 layout menu_entry
-layout menu_frame
 layout mr_chooser_dialog
 layout mr_chooser_list_item
 layout mr_controller_material_dialog_b
@@ -1928,7 +1874,6 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout slider_entry
-layout store_entry
 layout store_search_entry
 layout support_simple_spinner_dropdown_item
 layout tooltip
@@ -1939,7 +1884,6 @@ menu menu_default
 menu menu_details
 menu menu_new_review
 menu menu_reviews
-string IO_Exception_getFromLocation
 string abc_action_bar_home_description
 string abc_action_bar_home_description_format
 string abc_action_bar_home_subtitle_description_format
@@ -1974,16 +1918,9 @@ string abc_toolbar_collapse_description
 string about_us
 string about_us_detail
 string action_error
-string action_settings
-string alert_logout_user_no
 string alert_logout_user_title
 string alert_logout_user_title_details
-string alert_logout_user_yes
 string all_categories
-string anim_fold
-string anim_scale
-string anim_slide
-string anim_zoom
 string animation
 string app_id
 string app_name
@@ -2043,7 +1980,6 @@ string choose_browser
 string choose_email_client
 string click_to_add_edit
 string com_facebook_choose_friends
-string com_facebook_dialogloginactivity_ok_button
 string com_facebook_internet_permission_error_message
 string com_facebook_internet_permission_error_title
 string com_facebook_loading
@@ -2102,7 +2038,6 @@ string failed_data
 string fcm_fallback_notification_channel_label
 string featured
 string field_error
-string find_nearby
 string full_name
 string gcm_fallback_notification_channel_label
 string handset_not_supported
@@ -2600,7 +2535,6 @@ style Widget_Compat_NotificationActionText
 style Widget_MediaRouter_Light_MediaRouteButton
 style Widget_MediaRouter_MediaRouteButton
 style Widget_Support_CoordinatorLayout
-style com_facebook_loginview_default_style
 style com_facebook_loginview_silver_style
 style ratingBarList
 style ratingBarUserRating

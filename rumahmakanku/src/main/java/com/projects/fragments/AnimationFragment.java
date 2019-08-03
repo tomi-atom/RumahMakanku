@@ -30,7 +30,7 @@ public class AnimationFragment extends Fragment {
 	public void onViewCreated(View view, Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onViewCreated(view, savedInstanceState);
-		ImageView imgViewMenu = (ImageView) viewInflate.findViewById(R.id.imgViewMenu);
+		/*ImageView imgViewMenu = (ImageView) viewInflate.findViewById(R.id.imgViewMenu);
 		imgViewMenu.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -39,7 +39,7 @@ public class AnimationFragment extends Fragment {
 //				MainActivity3 main = (MainActivity3) getActivity();
 //				main.showSideMenu();
 			}
-		});
+		});*/
 	}
 	
 }
