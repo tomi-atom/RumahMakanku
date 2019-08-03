@@ -365,7 +365,7 @@ public class DetailActivity extends SwipeRefreshActivity implements OnClickListe
 						mMap.clear(); //clear old markers
 
 						CameraPosition googlePlex = CameraPosition.builder()
-								.target(new LatLng(37.4219999,-122.0862462))
+								.target(new LatLng(store.getLat(), store.getLon()))
 								.zoom(10)
 								.bearing(0)
 								.tilt(45)
@@ -374,18 +374,11 @@ public class DetailActivity extends SwipeRefreshActivity implements OnClickListe
 						mMap.animateCamera(CameraUpdateFactory.newCameraPosition(googlePlex), 10000, null);
 
 						mMap.addMarker(new MarkerOptions()
-								.position(new LatLng(37.4219999, -122.0862462))
-								.title("Spider Man")
+								.position(new LatLng(store.getLat(), store.getLon()))
+								.title(Html.fromHtml(store.getStore_name()).toString())
 								);
 
-						mMap.addMarker(new MarkerOptions()
-								.position(new LatLng(37.4629101,-122.2449094))
-								.title("Iron Man")
-								.snippet("His Talent : Plenty of money"));
 
-						mMap.addMarker(new MarkerOptions()
-								.position(new LatLng(37.3092293,-122.1136845))
-								.title("Captain America"));
 					}
 				});
 //                googleMap.setOnMapLoadedCallback(DetailActivity.this);
