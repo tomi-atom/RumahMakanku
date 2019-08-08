@@ -102,7 +102,7 @@ public class SearchFragment extends Fragment implements OnClickListener, OnLocat
 			}
 		});
 		ArrayList<String> categories = q.getCategoryNames();
-		String allCategories = this.getActivity().getResources().getString(R.string.all_categories);
+		String allCategories = this.getActivity().getResources().getString(R.string.semua_kategori);
 		categories.add(0, allCategories);
 		ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(
 				getActivity(), android.R.layout.simple_spinner_item, categories);

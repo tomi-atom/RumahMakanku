@@ -183,7 +183,7 @@ public class FeaturedFragment extends Fragment implements OnItemClickListener, O
 				
 				String strRating = String.format("%.2f %s %d %s", 
 						rating, 
-						getActivity().getResources().getString(R.string.average_based_on),
+						getActivity().getResources().getString(R.string.rata_rata),
 						store.getRating_count(),
 						getActivity().getResources().getString(R.string.rating));
 				
@@ -195,7 +195,7 @@ public class FeaturedFragment extends Fragment implements OnItemClickListener, O
 					tvRatingBarInfo.setText(strRating);
 				else
 					tvRatingBarInfo.setText(
-							getActivity().getResources().getString(R.string.no_rating));
+							getActivity().getResources().getString(R.string.tidak_ada_rating));
 
 				Favorite fave = q.getFavoriteByStoreId(store.getStore_id());
 				

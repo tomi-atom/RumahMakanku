@@ -82,8 +82,8 @@ public class NewsDetailActivity extends SwipeRefreshActivity implements OnClickL
 		if(!MGUtilities.hasConnection(this)) {
 			MGUtilities.showAlertView(
 					this, 
-					R.string.network_error, 
-					R.string.no_network_connection);
+					R.string.koneksi_error,
+					R.string.tidak_ada_koneksi);
 			hideSwipeProgress();
 			return;
 		}

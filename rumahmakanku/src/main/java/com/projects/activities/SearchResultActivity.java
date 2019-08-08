@@ -129,7 +129,7 @@ public class SearchResultActivity extends FragmentActivity implements OnItemClic
 				
 				String strRating = String.format("%.2f %s %d %s", 
 						rating, 
-						SearchResultActivity.this.getResources().getString(R.string.average_based_on),
+						SearchResultActivity.this.getResources().getString(R.string.rata_rata),
 						store.getRating_count(),
 						SearchResultActivity.this.getResources().getString(R.string.rating));
 				
@@ -141,7 +141,7 @@ public class SearchResultActivity extends FragmentActivity implements OnItemClic
 					tvRatingBarInfo.setText(strRating);
 				else
 					tvRatingBarInfo.setText(
-							SearchResultActivity.this.getResources().getString(R.string.no_rating));
+							SearchResultActivity.this.getResources().getString(R.string.tidak_ada_rating));
 
 				ImageView imgViewFeatured = (ImageView) v.findViewById(R.id.imgViewFeatured);
 				imgViewFeatured.setVisibility(View.VISIBLE);

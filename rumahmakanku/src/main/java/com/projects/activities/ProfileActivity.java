@@ -176,8 +176,8 @@ public class ProfileActivity extends FragmentActivity implements OnClickListener
 		if(!MGUtilities.hasConnection(ProfileActivity.this)) {
 			MGUtilities.showAlertView(
 					ProfileActivity.this, 
-					R.string.network_error, 
-					R.string.no_network_connection);
+					R.string.koneksi_error,
+					R.string.tidak_ada_koneksi);
 			return;
 		}
 		
@@ -188,15 +188,15 @@ public class ProfileActivity extends FragmentActivity implements OnClickListener
 		if(fullName.length() == 0) {
 			MGUtilities.showAlertView(
 					ProfileActivity.this, 
-					R.string.field_error, 
-					R.string.some_fields_are_missing);
+					R.string.data_bermsalah,
+					R.string.data_hilang);
 			return;
 		}
 		if(!UserAccessSession.getInstance(this).isLoggedInFromSocial()) {
 			if(password.length() == 0) {
 				MGUtilities.showAlertView(
 						ProfileActivity.this, 
-						R.string.field_error, 
+						R.string.data_bermsalah,
 						R.string.password_length_error);
 				return;
 			}
@@ -277,7 +277,7 @@ public class ProfileActivity extends FragmentActivity implements OnClickListener
         		session.storeUserSession(userSession);
         	}
         	else {
-        		MGUtilities.showAlertView(ProfileActivity.this, R.string.network_error, status.getStatus_text());
+        		MGUtilities.showAlertView(ProfileActivity.this, R.string.koneksi_error, status.getStatus_text());
         	}
         	
         }
@@ -397,8 +397,8 @@ public class ProfileActivity extends FragmentActivity implements OnClickListener
 
 	private void showLogoutAlertDialog() {
 		AlertDialog.Builder alert = new AlertDialog.Builder(this);
-	    alert.setTitle(this.getResources().getString(R.string.alert_logout_user_title));
-	    alert.setMessage(this.getResources().getString(R.string.alert_logout_user_title_details));
+	    alert.setTitle(this.getResources().getString(R.string.keluar));
+	    alert.setMessage(this.getResources().getString(R.string.peringatan_keluar));
 	    alert.setPositiveButton(this.getResources().getString(R.string.ok), 
 	    		new DialogInterface.OnClickListener() {
 			

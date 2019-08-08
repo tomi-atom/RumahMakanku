@@ -184,8 +184,8 @@ public class DetailActivity extends SwipeRefreshActivity implements OnClickListe
 		if(!MGUtilities.hasConnection(this)) {
 			MGUtilities.showAlertView(
 					this, 
-					R.string.network_error, 
-					R.string.no_network_connection);
+					R.string.koneksi_error,
+					R.string.tidak_ada_koneksi);
 			return;
 		}
 		
@@ -221,14 +221,14 @@ public class DetailActivity extends SwipeRefreshActivity implements OnClickListe
 			MGUtilities.showAlertView(
 					this, 
 					R.string.rating_error, 
-					R.string.rating_error_something_wrong);
+					R.string.rating_error_);
 			return;
 		}
 
 		LayoutInflater li = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		final View v = li.inflate(R.layout.rating_dialog, null);
 		AlertDialog.Builder alert = new AlertDialog.Builder(this);
-	    alert.setTitle(this.getResources().getString(R.string.rate_store));
+	    alert.setTitle(this.getResources().getString(R.string.rating_rm));
 	    alert.setView(v);
 	    alert.setPositiveButton(this.getResources().getString(R.string.rate), 
 	    		new DialogInterface.OnClickListener() {
@@ -256,8 +256,8 @@ public class DetailActivity extends SwipeRefreshActivity implements OnClickListe
 		if(!MGUtilities.hasConnection(this)) {
 			MGUtilities.showAlertView(
 					this, 
-					R.string.network_error, 
-					R.string.no_network_connection);
+					R.string.koneksi_error,
+					R.string.tidak_ada_koneksi);
 			return;
 		}
 		
@@ -351,6 +351,7 @@ public class DetailActivity extends SwipeRefreshActivity implements OnClickListe
         fragmentTransaction.add(R.id.googleMapContainer, mapFragment);
         fragmentTransaction.commit();
 
+		hideSwipeProgress();
         Handler h = new Handler();
         h.postDelayed(new Runnable() {
 			
@@ -529,7 +530,7 @@ public class DetailActivity extends SwipeRefreshActivity implements OnClickListe
 		
 		String strRating = String.format("%.2f %s %d %s", 
 				rating, 
-				this.getResources().getString(R.string.average_based_on),
+				this.getResources().getString(R.string.rata_rata),
 				store.getRating_count(),
 				this.getResources().getString(R.string.rating));
 				
@@ -579,8 +580,8 @@ public class DetailActivity extends SwipeRefreshActivity implements OnClickListe
 				else {
 					MGUtilities.showAlertView(
 							this, 
-							R.string.action_error, 
-							R.string.no_image_to_display);
+							R.string.aksi_error,
+							R.string.tidak_ada_gamber);
 				}
 				break;
 			case R.id.imgViewCall:
@@ -634,8 +635,8 @@ public class DetailActivity extends SwipeRefreshActivity implements OnClickListe
 		if( store.getPhone_no() == null || store.getPhone_no().length() == 0 ) {
 			MGUtilities.showAlertView(
 					this, 
-					R.string.action_error, 
-					R.string.cannot_proceed);
+					R.string.aksi_error,
+					R.string.tidak_bisa_diproses);
 			return;
 		}
 		PackageManager pm = this.getBaseContext().getPackageManager();
@@ -643,8 +644,8 @@ public class DetailActivity extends SwipeRefreshActivity implements OnClickListe
 	    if(!canCall) {
 			MGUtilities.showAlertView(
 					this, 
-					R.string.action_error, 
-					R.string.cannot_proceed);
+					R.string.aksi_error,
+					R.string.tidak_bisa_diproses);
 			return;
 		}
 		
@@ -659,8 +660,8 @@ public class DetailActivity extends SwipeRefreshActivity implements OnClickListe
 		if(store.getLat() == 0 || store.getLon() == 0) {
 			MGUtilities.showAlertView(
 					this, 
-					R.string.action_error, 
-					R.string.cannot_proceed);
+					R.string.aksi_error,
+					R.string.tidak_bisa_diproses);
 			return;
 		}
 		
@@ -687,8 +688,8 @@ public class DetailActivity extends SwipeRefreshActivity implements OnClickListe
 		if(store.getEmail() == null || store.getEmail().length() == 0) {
 			MGUtilities.showAlertView(
 					this, 
-					R.string.action_error, 
-					R.string.cannot_proceed);
+					R.string.aksi_error,
+					R.string.tidak_bisa_diproses);
 			return;
 		}
 		
@@ -701,15 +702,15 @@ public class DetailActivity extends SwipeRefreshActivity implements OnClickListe
 				MGUtilities.getStringFromResource(this, R.string.email_body) );
 		emailIntent.setType("message/rfc822");
 		this.startActivity(Intent.createChooser(emailIntent, 
-				MGUtilities.getStringFromResource(this, R.string.choose_email_client)) );
+				MGUtilities.getStringFromResource(this, R.string.pilih_email_pengguna)) );
 	}
 	
 	private void sms() {
 		if( store.getSms_no() == null || store.getSms_no().length() == 0 ) {
 			MGUtilities.showAlertView(
 					this, 
-					R.string.action_error, 
-					R.string.handset_not_supported);
+					R.string.aksi_error,
+					R.string.perangkat_tidak_mendukung);
 			return;
 		}
 		
@@ -718,8 +719,8 @@ public class DetailActivity extends SwipeRefreshActivity implements OnClickListe
 		if(!canSMS) {
 			MGUtilities.showAlertView(
 					this, 
-					R.string.action_error, 
-					R.string.handset_not_supported);
+					R.string.aksi_error,
+					R.string.perangkat_tidak_mendukung);
 			return;
 		}
 		
@@ -737,8 +738,8 @@ public class DetailActivity extends SwipeRefreshActivity implements OnClickListe
 		if(store.getWebsite() == null || store.getWebsite().length() == 0) {
 			MGUtilities.showAlertView(
 					this, 
-					R.string.action_error, 
-					R.string.cannot_proceed);
+					R.string.aksi_error,
+					R.string.tidak_bisa_diproses);
 			return;
 		}
 		String strUrl = store.getWebsite();
@@ -748,7 +749,7 @@ public class DetailActivity extends SwipeRefreshActivity implements OnClickListe
 		Intent webIntent = new Intent(Intent.ACTION_VIEW);
 		webIntent.setData(Uri.parse(strUrl));
 		this.startActivity(Intent.createChooser(webIntent, 
-				MGUtilities.getStringFromResource(this, R.string.choose_browser)));
+				MGUtilities.getStringFromResource(this, R.string.pilih_browser)));
 	}
 	
 	private void shareFB() {
@@ -801,20 +802,20 @@ public class DetailActivity extends SwipeRefreshActivity implements OnClickListe
 			                        // User clicked the Cancel button
 			                    	MGUtilities.showAlertView(
 				                    		DetailActivity.this, 
-				                    		R.string.publish_error, 
-				                    		R.string.publish_cancelled);
+				                    		R.string.publikasi_bermasalah,
+				                    		R.string.publikasi_dibatalkan);
 			                    }
 			                } else if (error instanceof FacebookOperationCanceledException) {
 			                    // User clicked the "x" button
 			                	MGUtilities.showAlertView(
 			                			DetailActivity.this, 
-			                    		R.string.publish_error, 
-			                    		R.string.publish_cancelled);
+			                    		R.string.publikasi_bermasalah,
+			                    		R.string.publikasi_dibatalkan);
 			                } else {
 			                    MGUtilities.showAlertView(
 			                    		DetailActivity.this, 
-			                    		R.string.network_error, 
-			                    		R.string.problems_encountered_facebook);
+			                    		R.string.koneksi_error,
+			                    		R.string.facebook_error);
 			                }
 						}
 			        })

@@ -160,7 +160,7 @@ public class StoreActivity extends SwipeRefreshActivity implements OnItemClickLi
 				
 				String strRating = String.format("%.2f %s %d %s", 
 						rating, 
-						StoreActivity.this.getResources().getString(R.string.average_based_on),
+						StoreActivity.this.getResources().getString(R.string.rata_rata),
 						store.getRating_count(),
 						StoreActivity.this.getResources().getString(R.string.rating));
 				
@@ -172,7 +172,7 @@ public class StoreActivity extends SwipeRefreshActivity implements OnItemClickLi
 					tvRatingBarInfo.setText(strRating);
 				else
 					tvRatingBarInfo.setText(
-							StoreActivity.this.getResources().getString(R.string.no_rating));
+							StoreActivity.this.getResources().getString(R.string.tidak_ada_rating));
 
 				Favorite fave = q.getFavoriteByStoreId(store.getStore_id());
 				ImageView imgViewFeatured = (ImageView) v.findViewById(R.id.imgViewFeatured);

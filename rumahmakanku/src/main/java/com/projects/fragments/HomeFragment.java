@@ -310,7 +310,7 @@ public class HomeFragment extends Fragment implements OnItemClickListener, OnCli
 	// Create Slider
 	private void createSlider() {
 		if(storeList != null && storeList.size() == 0 && newsList != null && newsList.size() == 0) {
-			MGUtilities.showNotifier(this.getActivity(), MainActivity.offsetY, R.string.failed_data);
+			MGUtilities.showNotifier(this.getActivity(), MainActivity.offsetY, R.string.data_gagal);
 			return;
 		}
 		

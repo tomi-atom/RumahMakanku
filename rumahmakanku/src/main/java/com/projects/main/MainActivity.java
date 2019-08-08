@@ -794,7 +794,7 @@ public class MainActivity extends SwipeRefreshActivity implements LocationListen
             return;
         }
         doubleBackToExitPressedOnce = true;
-        Toast.makeText(this, R.string.tap_back_again_to_exit, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, R.string.klik_lagi, Toast.LENGTH_SHORT).show();
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {

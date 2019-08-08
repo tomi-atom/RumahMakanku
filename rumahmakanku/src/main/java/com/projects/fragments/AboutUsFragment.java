@@ -51,12 +51,12 @@ public class AboutUsFragment extends Fragment implements OnClickListener{
 		Intent emailIntent = new Intent(Intent.ACTION_SEND);
 		emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{ Config.ABOUT_US_EMAIL } );
 		emailIntent.putExtra(Intent.EXTRA_SUBJECT, 
-				MGUtilities.getStringFromResource(getActivity(), R.string.email_subject_company) );
+				MGUtilities.getStringFromResource(getActivity(), R.string.email_subject2) );
 		
 		emailIntent.putExtra(Intent.EXTRA_TEXT, 
-				MGUtilities.getStringFromResource(getActivity(), R.string.email_body_company) );
+				MGUtilities.getStringFromResource(getActivity(), R.string.email_body2) );
 		emailIntent.setType("message/rfc822");
 		getActivity().startActivity(Intent.createChooser(emailIntent, 
-				MGUtilities.getStringFromResource(getActivity(), R.string.choose_email_client)) );
+				MGUtilities.getStringFromResource(getActivity(), R.string.pilih_email_pengguna)) );
 	}
 }

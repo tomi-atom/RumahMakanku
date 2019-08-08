@@ -17,7 +17,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/no_results_found"
+        android:text="@string/tidak_ditemukan"
         android:textColor="@color/text_white_cloor"
         android:textSize="@dimen/text_size__no_result" />
 

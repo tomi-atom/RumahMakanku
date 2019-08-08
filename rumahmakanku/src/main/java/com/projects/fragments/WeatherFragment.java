@@ -54,8 +54,8 @@ public class WeatherFragment extends Fragment {
 		if(MainActivity.location == null) {
 			MGUtilities.showAlertView(
 					getActivity(), 
-					R.string.location_error, 
-					R.string.cannot_determine_location);
+					R.string.lokasi_bermasalah,
+					R.string.tidak_dapat_lokasi);
 			return;
 		}
 		
@@ -119,10 +119,10 @@ public class WeatherFragment extends Fragment {
 		TextView tvAddress = (TextView) viewInflate.findViewById(R.id.tvAddress);
 		TextView tvDescription = (TextView) viewInflate.findViewById(R.id.tvDescription);
 		
-		tvFarenheit.setText(R.string.weather_placeholder);
-		tvCelsius.setText(R.string.weather_placeholder);
-		tvAddress.setText(R.string.weather_placeholder);
-		tvDescription.setText(R.string.weather_placeholder);
+		tvFarenheit.setText(R.string.placeholder);
+		tvCelsius.setText(R.string.placeholder);
+		tvAddress.setText(R.string.placeholder);
+		tvDescription.setText(R.string.placeholder);
 
 		if(dataWeather == null)
 			return;

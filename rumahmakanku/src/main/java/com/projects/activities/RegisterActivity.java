@@ -137,8 +137,8 @@ public class RegisterActivity extends FragmentActivity implements OnClickListene
 		if(!MGUtilities.hasConnection(RegisterActivity.this)) {
 			MGUtilities.showAlertView(
 					RegisterActivity.this, 
-					R.string.network_error, 
-					R.string.no_network_connection);
+					R.string.koneksi_error,
+					R.string.tidak_ada_koneksi);
 			return;
 		}
 		
@@ -209,7 +209,7 @@ public class RegisterActivity extends FragmentActivity implements OnClickListene
         		finish();
         	}
         	else {
-        		MGUtilities.showAlertView(this, R.string.network_error, status.getStatus_text());
+        		MGUtilities.showAlertView(this, R.string.koneksi_error, status.getStatus_text());
         	}
         }
 	}
@@ -228,8 +228,8 @@ public class RegisterActivity extends FragmentActivity implements OnClickListene
 		if(!MGUtilities.hasConnection(RegisterActivity.this)) {
 			MGUtilities.showAlertView(
 					RegisterActivity.this, 
-					R.string.network_error, 
-					R.string.no_network_connection);
+					R.string.koneksi_error,
+					R.string.tidak_ada_koneksi);
 			return;
 		}
 		
@@ -240,8 +240,8 @@ public class RegisterActivity extends FragmentActivity implements OnClickListene
 			
 			MGUtilities.showAlertView(
 					RegisterActivity.this, 
-					R.string.field_error, 
-					R.string.some_fields_are_missing);
+					R.string.data_bermsalah,
+					R.string.data_hilang);
 			return;
 		}
 		registerUser();

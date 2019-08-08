@@ -33,7 +33,7 @@
                         android:layout_margin="@dimen/dimen_20dp"
                         android:background="@drawable/textbox_search_normal"
                         android:ems="10"
-                        android:hint="@string/search_by_name_or_address"
+                        android:hint="@string/cari_nama_alamat"
                         android:paddingLeft="@dimen/dimen_40dp" >
                     </EditText>
 
@@ -61,7 +61,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="@string/search_nearby"
+                            android:text="@string/cari_terdekat"
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             android:textSize="@dimen/text_size_18sp"
                             android:textStyle="bold" />
@@ -139,7 +139,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="@string/categories"
+                            android:text="@string/kategori"
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             android:textSize="@dimen/text_size_18sp"
                             android:textStyle="bold" />

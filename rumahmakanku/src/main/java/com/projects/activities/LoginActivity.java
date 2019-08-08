@@ -105,8 +105,8 @@ public class LoginActivity extends FragmentActivity implements OnClickListener {
 		if(!MGUtilities.hasConnection(LoginActivity.this)) {
 			MGUtilities.showAlertView(
 					LoginActivity.this, 
-					R.string.network_error, 
-					R.string.no_network_connection);
+					R.string.koneksi_error,
+					R.string.tidak_ada_koneksi);
 			return;
 		}
 		
@@ -153,7 +153,7 @@ public class LoginActivity extends FragmentActivity implements OnClickListener {
 			MGUtilities.showAlertView(
 					LoginActivity.this,
 					R.string.login_error,
-					R.string.problems_encountered_login);
+					R.string.kesalahan_login);
 			return;
 		}
 
@@ -175,7 +175,7 @@ public class LoginActivity extends FragmentActivity implements OnClickListener {
         		finish();
         	}
         	else {
-        		MGUtilities.showAlertView(LoginActivity.this, R.string.network_error, status.getStatus_text());
+        		MGUtilities.showAlertView(LoginActivity.this, R.string.koneksi_error, status.getStatus_text());
         	}
         }
 	}
@@ -184,8 +184,8 @@ public class LoginActivity extends FragmentActivity implements OnClickListener {
 		if(!MGUtilities.hasConnection(LoginActivity.this)) {
 			MGUtilities.showAlertView(
 					LoginActivity.this, 
-					R.string.network_error, 
-					R.string.no_network_connection);
+					R.string.koneksi_error,
+					R.string.tidak_ada_koneksi);
 			return;
 		}
 		
@@ -232,8 +232,8 @@ public class LoginActivity extends FragmentActivity implements OnClickListener {
 		if(!MGUtilities.hasConnection(this)) {
 			MGUtilities.showAlertView(
 					LoginActivity.this, 
-					R.string.network_error, 
-					R.string.no_network_connection);
+					R.string.koneksi_error,
+					R.string.tidak_ada_koneksi);
 			return;
 		}
         task = new MGAsyncTask(LoginActivity.this);

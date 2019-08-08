@@ -131,8 +131,8 @@ public class NewReviewActivity extends FragmentActivity {
 			
 			MGUtilities.showAlertView(
 					NewReviewActivity.this, 
-					R.string.network_error, 
-					R.string.no_network_connection);
+					R.string.koneksi_error,
+					R.string.tidak_ada_koneksi);
 			
 			return;
 		}

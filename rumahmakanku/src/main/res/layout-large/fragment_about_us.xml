@@ -66,7 +66,7 @@
 					android:visibility="gone"
     	            android:layout_margin="@dimen/dimen_20dp"
     	            android:background="@drawable/button_blue_selector"
-    	            android:text="@string/contact_us"
+    	            android:text="@string/kontak"
     	            android:textColor="@color/text_white_cloor"
     	            android:textSize="@dimen/text_size_24sp"
     	            android:textStyle="bold" />

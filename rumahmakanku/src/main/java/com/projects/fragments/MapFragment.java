@@ -45,11 +45,9 @@ import com.projects.main.R;
 import com.libraries.sliding.MGSliding;
 import com.libraries.utilities.MGUtilities;
 
-import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -57,7 +55,6 @@ import android.graphics.drawable.Drawable;
 import android.location.Location;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.content.ContextCompat;
@@ -510,7 +507,7 @@ public class MapFragment extends Fragment implements
 				}
 
 				if(allDirections.size() == 0) {
-					Toast.makeText(getActivity(), R.string.cannot_determine_direction, Toast.LENGTH_SHORT).show();
+					Toast.makeText(getActivity(), R.string.gagal_direction, Toast.LENGTH_SHORT).show();
 				}
 			}
 
@@ -537,8 +534,8 @@ public class MapFragment extends Fragment implements
 		if(myLocation == null) {
 			MGUtilities.showAlertView(
 					getActivity(),
-					R.string.location_error,
-					R.string.cannot_determine_location);
+					R.string.lokasi_bermasalah,
+					R.string.tidak_dapat_lokasi);
 
 			return;
 		}
@@ -597,7 +594,7 @@ public class MapFragment extends Fragment implements
 
 	private void showBoundedMap() {
 		if(markerList == null && markerList.size() == 0 ) {
-			MGUtilities.showNotifier(this.getActivity(), MainActivity.offsetY, R.string.failed_data);
+			MGUtilities.showNotifier(this.getActivity(), MainActivity.offsetY, R.string.data_gagal);
 			return;
 		}
 
