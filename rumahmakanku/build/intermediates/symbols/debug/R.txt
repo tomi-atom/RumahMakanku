@@ -3146,3 +3146,4 @@ int styleable com_facebook_place_picker_fragment_show_search_box 3
 int[] styleable com_facebook_profile_picture_view { 0x7f0300d4, 0x7f030121 }
 int styleable com_facebook_profile_picture_view_is_cropped 0
 int styleable com_facebook_profile_picture_view_preset_size 1
+int xml network_security_config 0x7f100000
