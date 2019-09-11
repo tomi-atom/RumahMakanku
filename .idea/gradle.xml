@@ -3,9 +3,6 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <compositeConfiguration>
-          <compositeBuild compositeDefinitionSource="SCRIPT" />
-        </compositeConfiguration>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="gradleJvm" value="1.6" />
@@ -13,7 +10,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/facebookSDK" />
-            <option value="$PROJECT_DIR$/storeFinder" />
+            <option value="$PROJECT_DIR$/rumahmakanku" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
